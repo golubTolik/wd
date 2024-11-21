@@ -1,0 +1,832 @@
+@font-face {
+    font-family: "CapsulXpro";
+    src: url(../fonts/Capsulexpromediumuc.otf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    background-color: #141414;
+}
+
+.header{
+    background-image: url(../img/заставка.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */ 
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.livetv{
+    display: flex;
+}
+.livetv a{
+    color: #f0f0f0;
+    margin-left: 25px;
+    padding: 5px;
+    font-size: 24px;
+    transition: 1s;
+}
+.livetv a:hover{
+    background-color: #9b7653a2;
+    color: #185527;
+    box-shadow: #185527 0 0 20px;
+    border-radius: 20px;
+}
+
+.welkome{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.welkome h1{
+    font-size: 180px;
+    font-family: "CapsulXpro";
+    color: #9B7653;
+    padding-top: 160px;
+}
+.welkome h1 span{
+    font-family: "CapsulXpro";
+    color: #185527;
+}
+.welkome .sofi{
+    color: #9B7653;
+    font-size: 41px;
+    font-weight: 700;
+}
+.welkome .sofi span{
+    color: #185527;
+}
+.welkome .knopki button{
+    margin-top: 40px;
+    padding: 3px 37px;
+    border-radius: 50px;
+    border: 3px solid #9B7653;
+    background-color: #9b765300;
+    font-size: 32px;
+    font-weight: 700;
+    color: #9B7653;
+    transition: 1s;
+    margin-bottom: 195px;
+}
+.welkome .knopki button:hover{
+    box-shadow: #185527 0 0 20px;
+    /* background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc); */
+    background: #9B7653;
+    color: #185527;
+    transition: .5s;
+}
+
+.nas{
+    background: #195528;
+}
+.nas h1{
+    padding-top: 55px;
+    font-size: 48px;
+    text-align: center;
+    color: #f0f0f0;
+    font-weight: 600;
+}
+.nas h1 span{
+    color: #9B7653;
+}
+.nas h2{
+    margin-top: 55px;
+    font-size: 32px;
+    color: #f0f0f0;
+    font-weight: 600;
+}
+.nas .text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+.nas p{
+    font-size: 16px;
+    color: #f0f0f0;
+    font-weight: 500;
+    width: 56%;
+}
+
+.marshrute{
+    background-image: url(../img/маршруты.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.marshrute h1{
+    padding-top: 70px;
+    font-size: 48px;
+    text-align: center;
+    color: #f0f0f0;
+    font-weight: 600;
+    padding-bottom: 65px;
+}
+.karta{
+    display: flex;
+    padding: 10px 10px;
+    background-color: #9b7653b6;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.karta .zagolovok{
+    display: flex;
+}
+
+.karta .name{
+    display: flex;
+}
+.karta .coment{
+    display: flex;
+    align-items: center;
+}
+.karta h2{
+    font-family: "CapsulXpro";
+    color: #185527;
+    font-size: 32px;
+    transition: 1s;
+}
+.karta .zag{
+    padding-right: 50px;
+}
+.karta h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #f0f0f0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.karta p{
+    color: #185527;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    transition: 1s;
+}
+.karta .nik{
+    padding-left: 20px;
+}
+.karta h4{
+    font-size: 24px;
+    font-weight: 900;
+    padding-top: 10px;
+}
+.karta h5{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.karta .coment{
+    padding-top: 15px;
+}
+.karta h6{
+    font-size: 20px;
+    color: #f0f0f0;
+    font-weight: 700;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+.last{
+    padding-bottom: 45px;
+}
+.karta:hover{
+    background-color: #185527b0;
+    transition: .5s;
+    color: #9B7653;
+}
+.karta:hover h2{
+    color: #9B7653;
+    transition: .5s;
+}
+.karta:hover p{
+    color: #9B7653;
+    transition: .5s;
+}
+
+
+.ysluga{
+    background-color: #9B7653;
+}
+.ysluga h1{
+    font-size: 48px;
+    color: #f0f0f0;
+    font-weight: 600;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+.ysluga .opisanie .text{
+    font-size: 16px;
+    margin-top: 30px;
+    display: flex;
+}
+.ysluga .opisanie #input1:checked ~ .perecluch .text1, 
+#input2:checked ~ .perecluch .text2, #input3:checked ~ .perecluch .text3{
+    display: flex;
+    justify-content: space-around;
+}
+.ysluga .opisanie #input1:checked ~ #label1,
+#input2:checked ~ #label2, #input3:checked ~ #label3{
+    color: #f0f0f0;
+    text-decoration: underline 6px;
+    text-decoration-color: #185527b4;
+    /* Смещаем подчёркивание на 20 пикселей вниз */
+    text-underline-offset: 10px;
+}
+.ysluga .opisanie input{
+    display: none;
+}
+.ysluga .opisanie .perecluch{
+    width: 100%;
+    overflow: hidden;
+}
+.ysluga .opisanie .perecluch .line_carousel{
+    width: 301%;
+    display: flex;
+}
+.ysluga .opisanie .perecluch .text{
+    width: calc(100%/3);
+    /*animation: carousel 10s ease-in-out alternate infinite;*/
+    transition: 1s;
+}
+
+.ysluga .opisanie #input1:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translateX(0);
+}
+.ysluga .opisanie #input2:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translateX(-100%);
+}
+.ysluga .opisanie #input3:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translateX(-200%);
+}
+@keyframes carousel{
+    0%, 20%{
+        transform: translateX(0);
+    }
+    30%, 70%{
+        transform: translateX(-100%);
+    }
+    80%, 100%{
+        transform: translateX(-200%);
+    }
+}
+.ysluga .opisanie label{
+    font-size: 32px;
+    color: #616161;
+    font-weight: 600;
+    margin-right: 80px;
+    transition: 1s;
+}
+.ysluga .opisanie .text_tyrms{
+    font-size: 16px;
+    color: #f0f0f0;
+    font-weight: 500;
+}
+.ysluga .soderj{
+    width: 40%;
+}
+.ysluga .knopki button{
+    margin-top: 80px;
+    padding: 3px 37px;
+    border-radius: 50px;
+    border: 3px solid #185527;
+    background-color: #9b765300;
+    font-size: 27px;
+    font-weight: 700;
+    color: #185527;
+    transition: 1s;
+}
+.ysluga .knopki button:hover{
+    box-shadow: #9B7653 0 0 20px;
+    /* background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc); */
+    background: #185527;
+    color: #9B7653;
+    transition: .5s;
+}
+.ysluga .opisanie{
+    padding-bottom: 60px;
+}
+
+
+.gid{
+    background-image: url(../img/гиды.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+.gid h1{
+    font-size: 48px;
+    color: #f0f0f0;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 80px;
+}
+.gid h2{
+    font-size: 24px;
+    color: #f0f0f0;
+    font-weight: 600;
+    padding-top: 5px;
+    text-align: center;
+
+}
+.gid h3{
+    font-size: 16px;
+    color: #f0f0f0;
+    font-weight: 600;
+    padding: 10px 0px;
+    text-align: center;
+}
+.gid .gidu{
+    display: flex;
+    justify-content: space-between;
+}
+.gid .kart{
+    width: 232px;
+    background-color: #185527;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0px solid #185527;
+    transition: .5s;
+}
+.gid .kart:hover{
+    background-color: #185527a1;
+    box-shadow: #9B7653 0 0 20px;
+    transition: .5s;
+}
+.gid .icons{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 27px;
+    padding-right: 26px;
+    padding-bottom: 14px;
+}
+
+
+.blog{
+    background-color: #185527;
+}
+.blog h1{
+    font-size: 48px;
+    color: #f0f0f0;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.blog p{
+    font-size: 12px;
+    color: #185527;
+    font-weight: 600;
+    padding-top: 13px;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: 1s;
+}
+.blog .news{
+    background-color: #9B7653;
+    border-radius: 34px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-bottom: 15px;
+    transition: 1s;
+}
+.blog .news:hover{
+    background-color: #9b76538e;
+    transition: 0.5s;
+}
+.blog .news:hover p{
+    color: #1855277e;
+    transition: 0.5s;
+}
+.blog .news:hover img{
+    opacity: 50%;
+    transition: 0.5s;
+}
+.blog img{
+    border-radius: 34px;
+    transition: 1s;
+}
+.blog .new{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-flow: column dense;
+    padding-bottom: 60px;
+}
+
+
+.kontakt{
+    background-color: #185527;
+}
+.kontakt h1{
+    font-size: 48px;
+    color: #f0f0f0;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.kontakt p{
+    font-size: 20px;
+    color: #f0f0f0;
+    font-weight: 500;
+}
+.kontakt input{
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+}
+.kontakt .iputs{
+    display: flex;
+    justify-content: space-between;
+}
+.kontakt .last{
+    margin-top: 30px;
+    padding-bottom: 0;
+}
+.kontakt .posl{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.kontakt .knopki button{
+    padding: 25px 64px;
+    background-color: #9B7653;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f0f0f0;
+    transition: 1s;
+    margin-bottom: 45px;
+}
+.kontakt .knopki button:hover{
+    box-shadow: #9B7653 0 0 20px;
+    /* background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc); */
+    background: #f0f0f0;
+    color: #000000;
+    transition: .5s;
+}
+
+
+footer{
+    background-color: #9B7653;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #f0f0f0;
+}
+.footer .icons{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .img{
+    margin-left: 10px;
+}
+
+@media  (max-width:425px) {
+    .container{
+        width: 95%  !important;
+        margin: 0 auto;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer p{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .kontakt .knopki{
+        display: flex;
+        justify-content: center;
+    }
+    .kontakt input{
+        margin-bottom: 20px;
+    }
+    .kontakt .iputs{
+        flex-direction: column;
+    }
+    .kontakt .posl{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    .container h1{
+        font-size: 32px;
+    }
+    .blog .new{
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: repeat(10, 1fr) !important;
+    }
+    .blog img{
+        width: 100%;
+    }
+    .gid .gidu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gid .kart{
+        margin-top: 20px;
+    }
+    .ysluga .opisanie #input1:checked ~ .perecluch .text1, 
+    #input2:checked ~ .perecluch .text2, #input3:checked ~ .perecluch .text3{
+        flex-direction: column;
+    }
+    .ysluga .soderj{
+        width: 100%;
+    }
+    .ysluga .knopki button{
+        margin-top: 40px;
+    }
+    .ysluga img{
+        width: 100%;
+        height: 90%;
+    }
+    .ysluga .opisanie label{
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .karta{
+        flex-direction: column;
+        align-items: center;
+    }
+    .karta .zag{
+        padding-right: 5px;
+    }
+    .karta h2{
+        font-size: 24px;
+    }
+    .karta h3{
+        font-size: 16px;
+    }
+    .karta p{
+        font-size: 16px;
+    }
+    .karta h6{
+        font-size: 13px;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .nas .text{
+        flex-direction: column;
+    }
+    .nas h2{
+        font-size: 24px;
+    }
+    .nas p{
+        width: 100%;
+    }
+    .nas img{
+        width: 100%;
+    }
+    .welkome .sofi{
+        font-size: 14px;
+    }
+    .welkome h1{
+        font-size: 65px;
+    }
+    .welkome .knopki button{
+        margin-bottom: 80px;
+    }
+    .logo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livetv{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .livetv a{
+        margin-left: 10px;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+@media screen  and (min-width:500px) and (max-width:768px) {
+    .container{
+        width: 95%  !important;
+        margin: 0 auto;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer p{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .kontakt .knopki{
+        display: flex;
+        justify-content: center;
+    }
+    .kontakt input{
+        margin-bottom: 20px;
+    }
+    .kontakt .iputs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .kontakt .last{
+        margin-top: 0px;
+    }
+    .kontakt .posl{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    .container h1{
+        font-size: 32px;
+    }
+    .blog .new{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .blog img{
+        width: 100%;
+    }
+    .gid .gidu{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .gid .kart{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .ysluga .opisanie #input1:checked ~ .perecluch .text1, 
+    #input2:checked ~ .perecluch .text2, #input3:checked ~ .perecluch .text3{
+        flex-direction: column;
+    }
+    .ysluga .soderj{
+        width: 100%;
+    }
+    .ysluga .knopki button{
+        margin-top: 40px;
+    }
+    .ysluga img{
+        width: 100%;
+        height: 90%;
+    }
+    .ysluga .opisanie label{
+        margin-right: 40px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .karta .zag{
+        padding-right: 5px;
+    }
+    .karta h2{
+        font-size: 24px;
+    }
+    .karta h3{
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .karta h4{
+        font-size: 16px;
+    }
+    .karta h5{
+        font-size: 12px;
+    }
+    .karta p{
+        font-size: 12px;
+    }
+    .karta h6{
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .nas h2{
+        font-size: 24px;
+    }
+    .nas img{
+        width: 100%;
+    }
+    .welkome .sofi{
+        font-size: 24px;
+    }
+    .welkome h1{
+        font-size: 110px;
+    }
+    .welkome .knopki button{
+        margin-bottom: 130px;
+    }
+    .livetv a{
+        margin-left: 5px;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+@media screen  and (min-width:800px) and (max-width:1024px) {
+    .container{
+        width: 95%  !important;
+        margin: 0 auto;
+    }
+    .footer p{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .kontakt input{
+        margin-bottom: 20px;
+    }
+    .kontakt .last{
+        margin-top: 0px;
+    }
+    .kontakt .posl{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    .container h1{
+        font-size: 32px;
+    }
+    .blog .new{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .ysluga .opisanie label{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .karta h3{
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .karta h4{
+        font-size: 16px;
+    }
+    .karta h5{
+        font-size: 12px;
+    }
+    .karta p{
+        font-size: 12px;
+    }
+    .karta h6{
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .nas h2{
+        font-size: 24px;
+    }
+    .nas img{
+        margin-left: 20px;
+    }
+    .welkome .sofi{
+        font-size: 24px;
+    }
+    .welkome h1{
+        font-size: 110px;
+    }
+    .welkome .knopki button{
+        margin-bottom: 130px;
+    }
+    .livetv a{
+        margin-left: 5px;
+        padding: 5px;
+        font-size: 16px;
+    }
+}
